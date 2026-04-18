@@ -44,5 +44,5 @@ cd FastAPI-Project-Generator
 chmod +x main.sh
 ./main.sh
 # もしvenvを有効にするなら
-souce venv/bin/activate
+source venv/bin/activate
 ```
