@@ -9,6 +9,7 @@ FastAPIを使うときにディレクトリを作るのが面倒なので
 
 
 ## Project Structure
+```
 app/
 ├── api/
 │   └── routes.py
@@ -22,6 +23,7 @@ app/
 requirements.txt
 venv/
 
+```
 ## Usage
 ``` bash
 chmod +x main.sh
