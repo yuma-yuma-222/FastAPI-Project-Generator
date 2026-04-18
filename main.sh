@@ -18,9 +18,9 @@ touch \
     app/api/__init__.py \
     app/core/__init__.py \
     app/models/__init__.py \
-    app/services/__init__.py\
-    models/schmemas.py \
-    db/database.py
+    app/services/__init__.py \
+    app/models/schemas.py \
+    app/db/database.py
 
 # .gitignoreの作成
 echo "Creating .gitignore..."
@@ -82,8 +82,9 @@ source venv/bin/activate
 # 依存関係のインストール
 echo "Installing dependencies..."
 pip install --upgrade pip
-pip install -r requirements.txt
+
 pip install fastapi uvicorn
+pip freeze > requirements.txt
 
 
 
