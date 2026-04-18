@@ -1,7 +1,7 @@
 # FastAPI Project Generator
 これはFastAPIのディレクトリ構造と必須ファイルを自動で作成するShellScriptです．
 
-
+## Overview
 FastAPIを使うときにディレクトリを作るのが面倒なので
 テンプレートとしてこのシェルスクリプトを作成しました．
 
@@ -35,11 +35,14 @@ FastAPIを使うときにディレクトリを作るのが面倒なので
 ├── requirements.txt
 ├── venv
 └── .env
-
-
 ```
+
 ## Usage
 ``` bash
+git clone https://github.com/yuma-yuma-222/FastAPI-Project-Generator.git
+cd FastAPI-Project-Generator
 chmod +x main.sh
 ./main.sh
+# もしvenvを有効にするなら
+souce venv/bin/activate
 ```
