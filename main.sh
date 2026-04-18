@@ -5,7 +5,7 @@ set -e
 
 # プロジェクト構造の作成
 echo "Creating project structure..."
-mkdir -p app/{api,models,core}
+mkdir -p app/{api,models,core,services,db}
 touch \
     app/main.py \
     app/api/routes.py \
@@ -17,7 +17,10 @@ touch \
     app/__init__.py \
     app/api/__init__.py \
     app/core/__init__.py \
-    app/models/__init__.py
+    app/models/__init__.py \
+    app/services/__init__.py\
+    models/schmemas.py \
+    db/database.py
 
 # .gitignoreの作成
 echo "Creating .gitignore..."
