@@ -77,7 +77,8 @@ fi
 
 # 仮想環境のアクティベート
 echo "Activating virtual environment..."
-source venv/bin/activate
+# source venv/bin/activateはスクリプト内のサブシェルで実行されるため，このスクリプトの外でアクティベートする必要がある
+# source venv/bin/activate
 
 # 依存関係のインストール
 echo "Installing dependencies..."

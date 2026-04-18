@@ -14,18 +14,28 @@ FastAPIを使うときにディレクトリを作るのが面倒なので
 ## Project Structure
 生成されるディレクトリ・ファイルを以下に示す．
 ```
-app/
-├── api/
-│   └── routes.py
-├── core/
-│   └── config.py
-├── models/
-├── __init__.py
-└── main.py
+├── app
+│   ├── __init__.py
+│   ├── api
+│   │   ├── __init__.py
+│   │   └── routes.py
+│   ├── core
+│   │   ├── __init__.py
+│   │   └── config.py
+│   ├── db
+│   │   └── database.py
+│   ├── main.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   └── schemas.py
+│   └── services
+│       └── __init__.py
+├── main.sh
+├── README.md
+├── requirements.txt
+├── venv
+└── .env
 
-.env
-requirements.txt
-venv/
 
 ```
 ## Usage
